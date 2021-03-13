@@ -1,16 +1,25 @@
 module.exports = function (sequelize, DataTypes) {
-  const Example = sequelize.define('Example', {
-    text: DataTypes.STRING,
-    description: DataTypes.TEXT
+  const Post = sequelize.define('Post', {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
+  },
+  title: DataTypes.STRING,
+  author: DataTypes.STRING,
+  date: DataTypes.DATE,
+  body: DataTypes.STRING,
+  likes: DataTypes.INTEGER,
+  dislikes: DataTypes.INTEGER
   });
 
-  Example.associate = function (models) {
-    Example.belongsTo(models.User, {
+  Post.associate = function (models) {
+    Post.belongsTo(models.User, {
       foreignKey: {
         allowNull: false
       }
     });
   };
 
-  return Example;
+  return Post;
 };
