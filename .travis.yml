@@ -3,6 +3,9 @@ node_js: "10"
 branches:
   only:
   - main
+script:
+  - "npm run lint"
+  - "npm run test"
 cache:
   directories:
     - node_modules
