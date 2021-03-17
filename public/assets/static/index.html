@@ -25,9 +25,11 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-      <a href="#">Search</a>
+      <input id="search" type="text" placeholder="Enter Post Title">
       <a href="#">Profile</a>
-      <a href="#">Users</a>
+      <a href="#">New Post</a>
+
+
     </div>
     <div id="main">
       <button class="openbtn" onclick="openNav()">&#9776; Search</button>
@@ -82,11 +84,12 @@
             </div>
             <div class="card-body">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
+                <li class="list-group-item">Title: <input type="text"></li>
+                <li class="list-group-item">By: <input type="text"></li>
+                <li class="list-group-item">Post: <textarea name="" id="" cols="30" rows="10"></textarea></li>
+                <li class="list-group-item">Date: <input type="date"></li>
+                <li class="list-group-item"><button>likes</button>0</li>
+                <li class="list-group-item"><button>Dislikes</button>0</li>
               </ul>
             </div>
           </div>
