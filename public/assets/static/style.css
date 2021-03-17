@@ -114,3 +114,22 @@
     margin: 15px;
     box-shadow: 2px 2px 5px gray;
   }
+
+  #drink {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    margin-top: 150px;
+  }
+  #cook {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    margin-top: 150px;
+  }
+  #build {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    margin-top: 150px;
+  }
