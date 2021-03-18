@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post N' Stuff</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Title bar -->
+    <nav class="navbar titlebar fixed-top">
+      <div class="container-fluid justify-content-center">
+        <span id="title" class="m-1 h1">Posts N' Stuff</span
+        ><img id="Posts" src="public/assets/images/DrawingPin1_Blue.png" />
+      </div>
+    </nav>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <input id="search" type="text" placeholder="Enter Post Title">
+      <a href="#">Profile</a>
+      <a href="#">New Post</a>
+
+
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Search</button>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form id="cms">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input placeholder="Post Title" type="text" class="form-control" id="title">
+                    <br />
+                    <label for="body">Post:</label>
+                    <textarea placeholder="Post Body" class="form-control" rows="10" id="body"></textarea>
+                    <div class="form-group">
+                        <label for="category">Select Category:</label>
+                        <select class="custom-select" id="cat-type">
+                      </select>
+                    </div>
+                    <br />
+                    <button type="submit" class="btn btn-success submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <footer class="navbar bg-dark fixed-bottom">
+      <div class="container d-flex justify-content-center">
+        <span> &#169; Made By Team 7</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
