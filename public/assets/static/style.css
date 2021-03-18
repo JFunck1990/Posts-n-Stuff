@@ -11,6 +11,39 @@
   border-radius: 20%;
 }
 
+<<<<<<< HEAD
+  #drink {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    margin-top: 150px;
+  }
+  #cook {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    margin-top: 150px;
+  }
+  #build {
+    width: 25%;
+    height: 25%;
+    margin: 25px;
+    margin-top: 150px;
+  }
+  body.home {
+    /* background: rgba(139, 99, 181, 0.534); */
+    background: linear-gradient(
+      90deg,
+      #09796c 0%,
+      #2ab6b0 49%,
+      #2ab6b0 100%
+    );
+  }
+
+  i {
+    margin: 50px;
+  }
+=======
 .card {
   margin-right: 150px;
   box-shadow: 12px 12px 2px 1px rgb(49, 49, 53);
@@ -132,3 +165,4 @@ body.home {
   /* background: rgba(139, 99, 181, 0.534); */
   background: linear-gradient(90deg, #09796c 0%, #2ab6b0 49%, #2ab6b0 100%);
 }
+>>>>>>> 7e921aeeabbbab0acf4419f9ee32d04bc987fa77
