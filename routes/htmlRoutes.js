@@ -59,13 +59,37 @@ module.exports = (db) => {
   // Load example index page
   router.get('/food', function (req, res) {
     if (req.isAuthenticated()) {
-      db.Post.findAll({ where: { UserId: req.session.passport.user.id }, raw: true }).then(function (dbExamples) {
-        res.render('example', {
-          userInfo: req.session.passport.user,
-          isloggedin: req.isAuthenticated(),
-          msg: 'Your are in the food.',
-          examples: dbExamples
-        });
+      db.Post.findAll({ where: { category: 'Foods' } }).then((dbPost) => {
+        const hbsObject = {
+          post: dbPost
+        };
+        res.render('food', hbsObject);
+      });
+    } else {
+      res.redirect('/');
+    }
+  });
+
+  router.get('/drinks', function (req, res) {
+    if (req.isAuthenticated()) {
+      db.Post.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
+        const hbsObject = {
+          post: dbPost
+        };
+        res.render('drinks', hbsObject);
+      });
+    } else {
+      res.redirect('/');
+    }
+  });
+
+  router.get('/diy', function (req, res) {
+    if (req.isAuthenticated()) {
+      db.Post.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
+        const hbsObject = {
+          post: dbPost
+        };
+        res.render('diy', hbsObject);
       });
     } else {
       res.redirect('/');
