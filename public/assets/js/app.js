@@ -129,6 +129,7 @@ $('#login').on('click', function (event) {
   });
 });
 
+// eslint-disable-next-line no-unused-vars
 function drinks () {
   $('#drinks').on('click', function (event) {
     event.preventDefault();
@@ -136,6 +137,7 @@ function drinks () {
   });
 }
 
+// eslint-disable-next-line no-unused-vars
 function food () {
   $('#food').on('click', function (event) {
     event.preventDefault();
@@ -143,6 +145,7 @@ function food () {
   });
 }
 
+// eslint-disable-next-line no-unused-vars
 function diy () {
   $('#diy').on('click', function (event) {
     event.preventDefault();
