@@ -129,20 +129,26 @@ $('#login').on('click', function (event) {
   });
 });
 
-$('#register').on('click', function (event) {
-  event.preventDefault();
-  window.location.href = '/register';
-});
+function drinks () {
+  $('#drinks').on('click', function (event) {
+    event.preventDefault();
+    window.location.href = '/drinks';
+  });
+}
 
-$('#login-modal').on('click', function (event) {
-  event.preventDefault();
-  $('#user-info').modal('show');
-});
+function food () {
+  $('#food').on('click', function (event) {
+    event.preventDefault();
+    window.location.href = '/food';
+  });
+}
 
-$('#go-home').on('click', function (event) {
-  event.preventDefault();
-  window.location.href = '/';
-});
+function diy () {
+  $('#diy').on('click', function (event) {
+    event.preventDefault();
+    window.location.href = '/diy';
+  });
+}
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 // eslint-disable-next-line no-unused-vars
 function openNav () {
