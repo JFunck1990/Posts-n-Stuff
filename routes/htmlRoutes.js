@@ -30,40 +30,40 @@ module.exports = (db) => {
     }
   });
 
-  // Load dashboard page
+  // Load home page bofore login
   router.get('/', (req, res) => {
     if (req.isAuthenticated()) {
       const user = {
         user: req.session.passport.user,
         isloggedin: req.isAuthenticated()
       };
-      res.render('dashboard', user);
+      res.render('home', user);
     } else {
-      res.render('dashboard');
+      res.render('home');
     }
   });
 
-  // Load dashboard page
-  router.get('/dashboard', (req, res) => {
+  // Load home page
+  router.get('/home', (req, res) => {
     if (req.isAuthenticated()) {
       const user = {
         user: req.session.passport.user,
         isloggedin: req.isAuthenticated()
       };
-      res.render('dashboard', user);
+      res.render('home', user);
     } else {
-      res.render('dashboard');
+      res.render('home');
     }
   });
 
   // Load example index page
-  router.get('/example', function (req, res) {
+  router.get('/food', function (req, res) {
     if (req.isAuthenticated()) {
       db.Example.findAll({ where: { UserId: req.session.passport.user.id }, raw: true }).then(function (dbExamples) {
-        res.render('example', {
+        res.render('food', {
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated(),
-          msg: 'Welcome!',
+          msg: 'Your are in the foood page.',
           examples: dbExamples
         });
       });
