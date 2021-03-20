@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  const Post = sequelize.define('Post', {
+  const Posts = sequelize.define('Posts', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
@@ -7,19 +7,21 @@ module.exports = function (sequelize, DataTypes) {
     },
     title: DataTypes.STRING,
     author: DataTypes.STRING,
+    image: DataTypes.STRING,
+    category: DataTypes.STRING,
     date: DataTypes.DATE,
-    body: DataTypes.STRING,
+    body: DataTypes.STRING(5000),
     likes: DataTypes.INTEGER,
     dislikes: DataTypes.INTEGER
   });
 
-  Post.associate = function (models) {
-    Post.belongsTo(models.User, {
+  Posts.associate = function (models) {
+    Posts.belongsTo(models.User, {
       foreignKey: {
         allowNull: false
       }
     });
   };
 
-  return Post;
+  return Posts;
 };
