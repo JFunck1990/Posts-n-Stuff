@@ -1,46 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post N' Stuff</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
   <body>
     <!-- Title bar -->
     <nav class="navbar titlebar fixed-top">
       <div class="container-fluid justify-content-center">
-        <span id="title" class="m-1 h1">Drinks</span
-        ><img id="Posts" src="public/assets/images/DrawingPin1_Blue.png" />
+        <span id="title" class="m-1 h1">DIY</span
+        ><i class="fas fa-tools fa-2x text-light"></i>
       </div>
     </nav>
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      <a href="javascript:void(0)" class="openbtn" onclick="closeNav()"
         >&times;</a
       >
 
       <a href="#"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="34"
+          height="30"
           fill="currentColor"
           class="bi bi-house"
           viewBox="0 0 16 16"
@@ -57,7 +32,7 @@
       <a href="#">Search</a>
       <a href="#">Users</a>
       <a href="#">Food</a>
-      <a href="#">DIY</a>
+      <a href="#">Drinks</a>
     </div>
     <div id="main">
       <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
@@ -159,7 +134,3 @@
         <span> &#169; Made By Team 7</span>
       </div>
     </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>

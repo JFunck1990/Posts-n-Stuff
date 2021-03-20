@@ -1,0 +1,28 @@
+<nav class="navbar titlebar fixed-top">
+      <div class="container-fluid justify-content-center">
+        <span id="title" class="m-1 h1">Posts N' Stuff</span
+        ><img id="Posts" src="public/assets/images/DrawingPin1_Blue.png" />
+      </div>
+    </nav>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Search</a>
+      <a href="#">Profile</a>
+      <a href="#">Users</a>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Search</button>
+    </div>
+          {{#each post}}
+
+              {{> post}}
+
+          {{/each}}
+
+    <footer class="navbar bg-dark fixed-bottom">
+      <div class="container d-flex justify-content-center">
+        <span> &#169; Made By Team 7</span>
+      </div>
+    </footer>
