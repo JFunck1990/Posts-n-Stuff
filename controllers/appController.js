@@ -1,8 +1,8 @@
 module.exports = function (db) {
   return {
     // Get all Posts
-    getPosts: (req, res) => {
-      db.Post.findAll().then((dbPost) => {
+    getPostsByCategory: (req, res) => {
+      db.Post.findAll({ where: { category: req.params.category } }).then((dbPost) => {
         res.json(dbPost);
       });
     },
