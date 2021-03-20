@@ -21,17 +21,18 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  padding-top: 37px;
+  /* padding-top: 37px; */
 }
 
 .titlebar {
-  color: rgb(19, 12, 6);
   /* background: rgba(139, 99, 181, 0.534); */
   background: linear-gradient(90deg, #09796c 0%, #2ab6b0 49%, #2ab6b0 100%);
   border-bottom: 2px solid rgb(230, 230, 230);
   text-shadow: -1px -1px 0 rgba(255, 255, 255, 0), 1px 1px 0 rgba(0, 0, 0, 0.25),
     3px 3px 3px rgba(0, 0, 0, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.5),
     20px 40px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  
 }
 #Posts {
   height: 55px;
@@ -66,6 +67,10 @@ span {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+#title {
+  color: whitesmoke;
 }
 
 /* The sidebar links */
@@ -110,14 +115,15 @@ span {
   margin: 15px;
   box-shadow: 2px 2px 5px gray;
 }
-i {
-  margin: 40px;
+.fa-utensils, .fa-tools {
+  margin-left: 50px;
+  margin-top: 50px;
 }
 p {
   padding: 20px;
   font-size: 50px;
 }
-.landhere {
+.home {
   background: linear-gradient(90deg, #09796c 0%, #2ab6b0 49%, #2ab6b0 100%);
   display: flex;
   align-items: center;
@@ -249,8 +255,8 @@ p {
     transform: translateX(-135%);
   }
 }
-
-/* body {
+/* 
+body {
   color: white;
   background-size: cover;
   height:100%
@@ -323,4 +329,4 @@ hr {
 
 .card-body {
   color: #444;
-} */
+}  */
