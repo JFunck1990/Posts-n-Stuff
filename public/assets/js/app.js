@@ -128,3 +128,18 @@ $('#login').on('click', function (event) {
     }
   });
 });
+
+$('#register').on('click', function (event) {
+  event.preventDefault();
+  window.location.href = '/register';
+});
+
+$('#login-modal').on('click', function (event) {
+  event.preventDefault();
+  $('#user-info').modal('show');
+});
+
+$('#go-home').on('click', function (event) {
+  event.preventDefault();
+  window.location.href = '/';
+});
