@@ -57,76 +57,47 @@ module.exports = (db) => {
   });
 
   // Load example index page
-  /* router.get('/food', function (req, res) {
+  router.get('/food', function (req, res) {
     if (req.isAuthenticated()) {
-      db.Post.findAll({ where: { category: 'Food' } }).then((dbPost) => {
+      db.Posts.findAll({ where: { category: 'Food' } }).then((dbPost) => {
         const hbsObject = {
-          post: dbPost
+          post: dbPost,
+          userInfo: req.session.passport.user,
+          isloggedin: req.isAuthenticated()
         };
         res.render('food', hbsObject);
       });
     } else {
       res.redirect('/');
     }
-  }); */
-
-  router.get('/food', (req, res) => {
-    if (req.isAuthenticated()) {
-      const user = {
-        userInfo: req.session.passport.user,
-        isloggedin: req.isAuthenticated()
-      };
-      res.render('food', user);
-    } else {
-      res.redirect('/');
-    }
   });
 
-  /* router.get('/drinks', function (req, res) {
+  router.get('/drinks', function (req, res) {
     if (req.isAuthenticated()) {
-      db.Post.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
+      db.Posts.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
         const hbsObject = {
-          post: dbPost
+          post: dbPost,
+          userInfo: req.session.passport.user,
+          isloggedin: req.isAuthenticated()
         };
+        console.log(hbsObject.post[0].dataValues);
         res.render('drinks', hbsObject);
       });
     } else {
       res.redirect('/');
     }
-  }); */
-
-  router.get('/drinks', (req, res) => {
-    if (req.isAuthenticated()) {
-      const user = {
-        userInfo: req.session.passport.user,
-        isloggedin: req.isAuthenticated()
-      };
-      res.render('drinks', user);
-    } else {
-      res.redirect('/');
-    }
   });
 
-  /* router.get('/diy', function (req, res) {
+  router.get('/diy', function (req, res) {
     if (req.isAuthenticated()) {
-      db.Post.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
+      db.Posts.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
         const hbsObject = {
-          post: dbPost
+          post: dbPost,
+          userInfo: req.session.passport.user,
+          isloggedin: req.isAuthenticated()
         };
         res.render('diy', hbsObject);
       });
-    } else {
-      res.redirect('/');
-    }
-  }); */
-
-  router.get('/diy', (req, res) => {
-    if (req.isAuthenticated()) {
-      const user = {
-        userInfo: req.session.passport.user,
-        isloggedin: req.isAuthenticated()
-      };
-      res.render('diy', user);
     } else {
       res.redirect('/');
     }
