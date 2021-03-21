@@ -65,6 +65,7 @@ module.exports = (db) => {
         });
 
         const hbsObject = {
+          category: 'Food',
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
@@ -84,6 +85,7 @@ module.exports = (db) => {
         });
 
         const hbsObject = {
+          category: 'Drinks',
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
@@ -104,6 +106,7 @@ module.exports = (db) => {
         });
 
         const hbsObject = {
+          category: 'DIY',
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
