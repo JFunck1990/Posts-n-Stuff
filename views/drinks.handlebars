@@ -6,90 +6,23 @@
     <div class="container">
       <div class="wrapper">
         <div class="row justify-content-center">
+          {{#each post}}
           <div class="card" style="width: 19rem">
             <div class="card-header">
               <h3>Post Subject</h3>
             </div>
             <div class="card-body">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
+                <li class="list-group-item">Title: {{this.dataValues.title}}</li>
+                <li class="list-group-item">By: {{this.dataValues.author}}</li>
+                <li class="list-group-item">Body: {{this.dataValues.body}}</li>
+                <li class="list-group-item">Date: {{this.dataValues.date}}</li>
+                <li class="list-group-item">Likes: {{this.dataValues.likes}}</li>
+                <li class="list-group-item">Dislikes: {{this.dataValues.dislikes}}</li>
               </ul>
             </div>
           </div>
-          <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>Post Subject</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>Post Subject</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>Post Subject</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>Post Subject</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>Post Subject</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title:</li>
-                <li class="list-group-item">By:</li>
-                <li class="list-group-item">Date:</li>
-                <li class="list-group-item">Likes:</li>
-                <li class="list-group-item">Dislikes:</li>
-              </ul>
-            </div>
-          </div>
+          {{/each}}
         </div>
       </div>
     </div>
