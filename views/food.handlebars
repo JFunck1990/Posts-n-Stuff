@@ -1,15 +1,7 @@
 <body>
     <!-- Title bar -->
-    <nav class="navbar titlebar fixed-top">
-      <div class="container-fluid justify-content-center">
-        <span id="title" class="m-1 h1">Food </span
-        ><i class="fas fa-utensils fa-2x text-light"></i>
-      </div>
-    </nav>
+    {{> nav/nav-block}}
     {{> nav/sidebar-block}}
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-    </div>
 
     <div class="container">
       <div class="wrapper">
