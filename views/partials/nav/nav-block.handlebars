@@ -1,35 +1,28 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" href="/">
-    AppName
-  </a>
-  
-  <!-- Links -->
-  <ul class="nav navbar-nav ml-auto">
+<nav class="navbar titlebar static-top">
+  <div class="container-fluid justify-content-center">
+    <div id="title" class="m-1 h1">{{Category}}</div>
+    <ul class="nav navbar ml-auto">
 
-    {{!-- <li class="nav-item">
-      <a class="nav-link" href="/some-feature">Menu item here</a>
-    </li> --}}
-
-    {{#if isloggedin}}
-      <li class="nav-item">
-        <a class="nav-link" href="/example">Example page</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/profile">My Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/logout">Logout</a>
-      </li>
-    {{else}}
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="login-modal">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/register" data-register={{register}}>Register</a>
-      </li>
-    {{/if}}
-  </ul>
+      {{#if isloggedin}}
+        <li class="nav-item">
+          <a class="nav-link" style="color: whitesmoke;" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: whitesmoke;" href="/profile">My Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: whitesmoke;" href="/logout">Logout</a>
+        </li>
+      {{else}}
+        <li class="nav-item">
+          <a class="nav-link" style="color: whitesmoke;" href="#" id="login-modal">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: whitesmoke;" href="/register" data-register={{register}}>Register</a>
+        </li>
+      {{/if}}
+    </ul>
+  </div>
 </nav>
 
 {{> modal/login-block}}
