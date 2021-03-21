@@ -56,8 +56,8 @@ module.exports = (db) => {
     }
   });
 
-  //Load example index page
-   router.get('/food', function (req, res) {
+  // Load example index page
+  router.get('/food', function (req, res) {
     if (req.isAuthenticated()) {
       db.Posts.findAll({ where: { category: 'Food' } }).then((dbPost) => {
         const hbsObject = {
@@ -70,12 +70,11 @@ module.exports = (db) => {
     } else {
       res.redirect('/');
     }
-  }); 
+  });
 
   router.get('/drinks', function (req, res) {
     if (req.isAuthenticated()) {
       db.Posts.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
-        
         const hbsObject = {
           post: dbPost,
           userInfo: req.session.passport.user,
@@ -89,7 +88,7 @@ module.exports = (db) => {
     }
   });
 
-   router.get('/diy', function (req, res) {
+  router.get('/diy', function (req, res) {
     if (req.isAuthenticated()) {
       db.Posts.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
         const hbsObject = {
