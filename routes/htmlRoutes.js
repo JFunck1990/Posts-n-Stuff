@@ -72,13 +72,9 @@ module.exports = (db) => {
 
   router.get('/food', (req, res) => {
     if (req.isAuthenticated()) {
-      const user = {
-        user: req.session.passport.user,
-        isloggedin: req.isAuthenticated()
-      };
-      res.render('food', user);
-    } else {
       res.render('food');
+    } else {
+      res.redirect('/');
     }
   });
 
@@ -97,13 +93,9 @@ module.exports = (db) => {
 
   router.get('/drinks', (req, res) => {
     if (req.isAuthenticated()) {
-      const user = {
-        user: req.session.passport.user,
-        isloggedin: req.isAuthenticated()
-      };
-      res.render('drinks', user);
-    } else {
       res.render('drinks');
+    } else {
+      res.redirect('/');
     }
   });
 
@@ -122,13 +114,9 @@ module.exports = (db) => {
 
   router.get('/diy', (req, res) => {
     if (req.isAuthenticated()) {
-      const user = {
-        user: req.session.passport.user,
-        isloggedin: req.isAuthenticated()
-      };
-      res.render('diy', user);
-    } else {
       res.render('diy');
+    } else {
+      res.redirect('/');
     }
   });
 
@@ -144,6 +132,15 @@ module.exports = (db) => {
       });
     } else {
       res.redirect('/');
+    }
+  });
+  // login
+  router.get('/login', (req, res) => {
+    // If the user already has an account send them to the members page
+    if (req.isAuthenticated()) {
+      res.redirect('/');
+    } else {
+      res.redirect('/login');
     }
   });
 
