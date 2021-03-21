@@ -9,13 +9,14 @@
           {{#each post}}
           <div class="card" style="width: 19rem">
             <div class="card-header">
-              <h3>Post Subject</h3>
+              <h3>{{this.dataValues.title}}</h3>
             </div>
             <div class="card-body">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title: {{this.dataValues.title}}</li>
-                <li class="list-group-item">By: {{this.dataValues.author}}</li>
-                <li class="list-group-item">Body: {{this.dataValues.body}}</li>
+                <li class="list-group-item" style="font-size: 12px;">By: {{this.dataValues.author}}</li>
+                {{#each this.dataValues.body}}
+                <li class="list-group-item">{{this}}</li>
+                {{/each}}
                 <li class="list-group-item">Date: {{this.dataValues.date}}</li>
                 <li class="list-group-item">Likes: {{this.dataValues.likes}}</li>
                 <li class="list-group-item">Dislikes: {{this.dataValues.dislikes}}</li>
