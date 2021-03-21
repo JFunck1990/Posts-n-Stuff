@@ -57,9 +57,9 @@ module.exports = (db) => {
   });
 
   // Load example index page
-  router.get('/food', function (req, res) {
+  /* router.get('/food', function (req, res) {
     if (req.isAuthenticated()) {
-      db.Post.findAll({ where: { category: 'Foods' } }).then((dbPost) => {
+      db.Post.findAll({ where: { category: 'Food' } }).then((dbPost) => {
         const hbsObject = {
           post: dbPost
         };
@@ -68,9 +68,21 @@ module.exports = (db) => {
     } else {
       res.redirect('/');
     }
+  }); */
+
+  router.get('/food', (req, res) => {
+    if (req.isAuthenticated()) {
+      const user = {
+        user: req.session.passport.user,
+        isloggedin: req.isAuthenticated()
+      };
+      res.render('food', user);
+    } else {
+      res.render('food');
+    }
   });
 
-  router.get('/drinks', function (req, res) {
+  /* router.get('/drinks', function (req, res) {
     if (req.isAuthenticated()) {
       db.Post.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
         const hbsObject = {
@@ -81,9 +93,21 @@ module.exports = (db) => {
     } else {
       res.redirect('/');
     }
+  }); */
+
+  router.get('/drinks', (req, res) => {
+    if (req.isAuthenticated()) {
+      const user = {
+        user: req.session.passport.user,
+        isloggedin: req.isAuthenticated()
+      };
+      res.render('drinks', user);
+    } else {
+      res.render('drinks');
+    }
   });
 
-  router.get('/diy', function (req, res) {
+  /* router.get('/diy', function (req, res) {
     if (req.isAuthenticated()) {
       db.Post.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
         const hbsObject = {
@@ -93,6 +117,18 @@ module.exports = (db) => {
       });
     } else {
       res.redirect('/');
+    }
+  }); */
+
+  router.get('/diy', (req, res) => {
+    if (req.isAuthenticated()) {
+      const user = {
+        user: req.session.passport.user,
+        isloggedin: req.isAuthenticated()
+      };
+      res.render('diy', user);
+    } else {
+      res.render('diy');
     }
   });
 
