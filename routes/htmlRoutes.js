@@ -72,7 +72,11 @@ module.exports = (db) => {
 
   router.get('/food', (req, res) => {
     if (req.isAuthenticated()) {
-      res.render('food');
+      const user = {
+        userInfo: req.session.passport.user,
+        isloggedin: req.isAuthenticated()
+      };
+      res.render('food', user);
     } else {
       res.redirect('/');
     }
@@ -93,7 +97,11 @@ module.exports = (db) => {
 
   router.get('/drinks', (req, res) => {
     if (req.isAuthenticated()) {
-      res.render('drinks');
+      const user = {
+        userInfo: req.session.passport.user,
+        isloggedin: req.isAuthenticated()
+      };
+      res.render('drinks', user);
     } else {
       res.redirect('/');
     }
@@ -114,7 +122,11 @@ module.exports = (db) => {
 
   router.get('/diy', (req, res) => {
     if (req.isAuthenticated()) {
-      res.render('diy');
+      const user = {
+        userInfo: req.session.passport.user,
+        isloggedin: req.isAuthenticated()
+      };
+      res.render('diy', user);
     } else {
       res.redirect('/');
     }
