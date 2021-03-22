@@ -63,7 +63,6 @@ module.exports = (db) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
           post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
-          post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
         const hbsObject = {
@@ -88,7 +87,6 @@ module.exports = (db) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
           post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
-          post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
         const hbsObject = {
@@ -116,7 +114,6 @@ module.exports = (db) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
           post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
-          post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
         const hbsObject = {

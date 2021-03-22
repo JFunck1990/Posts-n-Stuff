@@ -26,23 +26,40 @@ module.exports = function (db) {
     },
 
     updatePostContent: (req, res) => {
-      db.Posts.update({ title: req.body, body: req.body.body }, { where: { id: req.params.id } }).then((dbPost) => {
+      db.Posts.update({ title: req.body, body: req.body.body }, `id = ${req.params.id}`, (result) => {
+        if (result.changedRows === 0) {
+          // If no rows were changed, then the ID must not exist, so 404
+          return res.status(404).end();
+        }
+        res.status(200).end();
+      }).then((dbPost) => {
         res.json(dbPost);
       });
     },
 
     updateLikes: (req, res) => {
-      db.Posts.update({ likes: req.body }, { where: { id: req.params.id } }).then((dbPost) => {
+      db.Posts.update({ likes: req.body.numLikes }, { where: { id: req.params.id } }, (result) => {
+        if (result.changedRows === 0) {
+          // If no rows were changed, then the ID must not exist, so 404
+          return res.status(404).end();
+        }
+        res.status(200).end();
+      }).then((dbPost) => {
         res.json(dbPost);
       });
     },
 
     updateDislikes: (req, res) => {
-      db.Posts.update({ dislikes: req.body }, { where: { id: req.params.id } }).then((dbPost) => {
+      console.log(req.params.id);
+      db.Posts.update({ dislikes: req.body.numDislikes }, { where: { id: req.params.id } }, (result) => {
+        if (result.changedRows === 0) {
+          // If no rows were changed, then the ID must not exist, so 404
+          return res.status(404).end();
+        }
+        res.status(200).end();
+      }).then((dbPost) => {
         res.json(dbPost);
       });
     }
   };
 };
-
-// { where: { UserId: req.session.passport.user.id } }
