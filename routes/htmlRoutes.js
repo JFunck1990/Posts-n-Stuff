@@ -60,12 +60,16 @@ module.exports = (db) => {
   router.get('/food', function (req, res) {
     if (req.isAuthenticated()) {
       db.Posts.findAll({ where: { category: 'Food' } }).then((dbPost) => {
+        dbPost.forEach((post) => {
+          post.dataValues.body = post.dataValues.body.split('\n');
+        });
+
         const hbsObject = {
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
         };
-        res.render('food', hbsObject);
+        res.render('drinks', hbsObject);
       });
     } else {
       res.redirect('/');
@@ -75,12 +79,16 @@ module.exports = (db) => {
   router.get('/drinks', function (req, res) {
     if (req.isAuthenticated()) {
       db.Posts.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
+        dbPost.forEach((post) => {
+          post.dataValues.body = post.dataValues.body.split('\n');
+        });
+
         const hbsObject = {
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
         };
-        console.log(hbsObject.post[0].dataValues);
+        console.log(hbsObject.post[0]);
         res.render('drinks', hbsObject);
       });
     } else {
@@ -91,12 +99,16 @@ module.exports = (db) => {
   router.get('/diy', function (req, res) {
     if (req.isAuthenticated()) {
       db.Posts.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
+        dbPost.forEach((post) => {
+          post.dataValues.body = post.dataValues.body.split('\n');
+        });
+
         const hbsObject = {
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
         };
-        res.render('diy', hbsObject);
+        res.render('drinks', hbsObject);
       });
     } else {
       res.redirect('/');
