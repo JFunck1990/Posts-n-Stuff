@@ -62,7 +62,7 @@ module.exports = (db) => {
       db.Posts.findAll({ where: { category: 'Food' } }).then((dbPost) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
-          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0,4).join(' ');
+          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
           post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
@@ -84,7 +84,7 @@ module.exports = (db) => {
       db.Posts.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
-          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0,4).join(' ');
+          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
           post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
@@ -109,7 +109,7 @@ module.exports = (db) => {
       db.Posts.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
-          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0,4).join(' ');
+          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
           post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
