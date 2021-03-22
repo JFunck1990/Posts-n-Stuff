@@ -26,19 +26,19 @@ module.exports = function (db) {
     },
 
     updatePostContent: (req, res) => {
-      db.Post.update({ title: req.body.title, body: req.body.body }, { where: { id: req.params.id } }).then((dbPost) => {
+      db.Post.update({ title: req.body, body: req.body.body }, { where: { id: req.params.id } }).then((dbPost) => {
         res.json(dbPost);
       });
     },
 
     updateLikes: (req, res) => {
-      db.Post.update({ likes: req.body.likes }, { where: { id: req.params.id } }).then((dbPost) => {
+      db.Post.update({ likes: req.body }, { where: { id: req.params.id } }).then((dbPost) => {
         res.json(dbPost);
       });
     },
 
     updateDislikes: (req, res) => {
-      db.Post.update({ dislikes: req.body.dislikes }, { where: { id: req.params.id } }).then((dbPost) => {
+      db.Post.update({ dislikes: req.body }, { where: { id: req.params.id } }).then((dbPost) => {
         res.json(dbPost);
       });
     }

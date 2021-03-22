@@ -19,8 +19,8 @@ module.exports = (passport, db) => {
   router.post('/Post', AppController.createPost);
   router.delete('/Post/:id', AppController.deletePost);
   router.put('/Post/:id', AppController.updatePostContent);
-  router.put('/Post/:likes', AppController.updateLikes);
-  router.put('/Post/:dislikes', AppController.updateDislikes);
+  router.put('/Post/likes/:likes', AppController.updateLikes);
+  router.put('/Post/dislikes/:dislikes', AppController.updateDislikes);
 
   return router;
 };

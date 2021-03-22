@@ -62,9 +62,12 @@ module.exports = (db) => {
       db.Posts.findAll({ where: { category: 'Food' } }).then((dbPost) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
+          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
+          post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
         const hbsObject = {
+          category: 'Food',
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
@@ -81,14 +84,19 @@ module.exports = (db) => {
       db.Posts.findAll({ where: { category: 'Drinks' } }).then((dbPost) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
+          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
+          post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
         const hbsObject = {
+          category: 'Drinks',
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
         };
-        console.log(hbsObject.post[0]);
+        console.log('--------------------------------');
+        // console.log(hbsObject.post[0].dataValues.image.split('"')[1]);
+        console.log('--------------------------------');
         res.render('drinks', hbsObject);
       });
     } else {
@@ -101,9 +109,12 @@ module.exports = (db) => {
       db.Posts.findAll({ where: { category: 'DIY' } }).then((dbPost) => {
         dbPost.forEach((post) => {
           post.dataValues.body = post.dataValues.body.split('\n');
+          post.dataValues.date = post.dataValues.date.toString().split(' ').slice(0, 4).join(' ');
+          post.dataValues.image = post.dataValues.image.split('"')[1];
         });
 
         const hbsObject = {
+          category: 'DIY',
           post: dbPost,
           userInfo: req.session.passport.user,
           isloggedin: req.isAuthenticated()
