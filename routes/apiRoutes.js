@@ -14,13 +14,13 @@ module.exports = (passport, db) => {
   router.post('/user/confirm', AuthController.confirmAuth);
 
   // Post functions
-  router.get('/Post/:category', AppController.getPostsByCategory);
-  router.get('/Post/:title', AppController.getPostByTitle);
-  router.post('/Post', AppController.createPost);
-  router.delete('/Post/:id', AppController.deletePost);
-  router.put('/Post/:id', AppController.updatePostContent);
-  router.put('/Post/likes/:likes', AppController.updateLikes);
-  router.put('/Post/dislikes/:dislikes', AppController.updateDislikes);
+  router.get('/post/:category', AppController.getPostsByCategory);
+  router.get('/post/:title', AppController.getPostByTitle);
+  router.post('/post', AppController.createPost);
+  router.delete('/post/:id', AppController.deletePost);
+  router.put('/post/:id', AppController.updatePostContent);
+  router.put('/post/likes/:likes', AppController.updateLikes);
+  router.put('/post/dislikes/:dislikes', AppController.updateDislikes);
 
   return router;
 };
