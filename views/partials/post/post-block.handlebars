@@ -1,14 +1,42 @@
- <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>{{firstName}}</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title: {{title}}</li>
-                <li class="list-group-item">By: {{user.firstName}}</li>
-                <li class="list-group-item">Date: {{date}}</li>
-                <li class="list-group-item">Likes: {{likes}}</li>
-                <li class="list-group-item">Dislikes: {{dislikes}}</li>
-              </ul>
-            </div>
+<div class="modal" id="post-info" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">New Post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="inputPost">Title</label>
+            <input type="text" class="form-control" id="post-title">
           </div>
+          <div class="form-group">
+            <label for="inputPost">Image Link</label>
+            <input type="text" class="form-control" id="image-link">
+          </div>
+          <div class="form-group">
+            <label for="inputPost">Choose your category:</label>
+            <select class="form-control" id="inputPost">
+              <option>Food</option>
+              <option>Drink</option>
+              <option>DIY</option>
+            </select>
+          </div>
+          <div>
+            <label for="inputPost">Post Content</label>
+            <textarea type="text" class="form-control" id="post-body" rows="12"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button id="newPost" type="button" class="btn btn-primary">Post</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,10 +5,13 @@
 
       {{#if isloggedin}}
         <li class="nav-item">
+          <a class="nav-link" style="color: whitesmoke;" href="#" id="post-modal">Post</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" style="color: whitesmoke;" href="/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: whitesmoke;" href="/profile">My Profile</a>
+          <a class="nav-link" style="color: whitesmoke;" href="/profile">{{this.userInfo.firstName}}'s Profile</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="color: whitesmoke;" href="/logout">Logout</a>
@@ -24,5 +27,7 @@
     </ul>
   </div>
 </nav>
+
+{{> post/post-block}}
 
 {{> modal/login-block}}

@@ -1,16 +1,16 @@
 [
   {
-    "drinkName": "\"GG\"",
+    "drinkName": "GG",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Galliano 2 1/2 shots ",
       "2. Ginger ale",
       "3. Ice"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg"
   },
   {
-    "drinkName": "\"A1\"",
+    "drinkName": "A1",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Gin 1 3/4 shot ",
@@ -18,48 +18,48 @@
       "3. Lemon Juice 1/4 Shot",
       "4. Grenadine 1/8 Shot"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg"
   },
   {
-    "drinkName": "\"ABC\"",
+    "drinkName": "ABC",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Amaretto 1/3 ",
       "2. Baileys irish cream 1/3 ",
       "3. Cognac 1/3 "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg"
   },
   {
-    "drinkName": "\"Kir\"",
+    "drinkName": "Kir",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Creme de Cassis 1 part ",
       "2. Champagne 5 parts "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/apneom1504370294.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/apneom1504370294.jpg"
   },
   {
-    "drinkName": "\"747\"",
+    "drinkName": "747",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Kahlua 1/3 part ",
       "2. Baileys irish cream 1/3 part ",
       "3. Frangelico 1/3 part "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg"
   },
   {
-    "drinkName": "\"252\"",
+    "drinkName": "252",
     "drinkIngredients": [
       "Ingredients: ",
       "1. 151 proof rum 1/2 shot Bacardi ",
       "2. Wild Turkey 1/2 shot "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg"
   },
   {
-    "drinkName": "\"Ace\"",
+    "drinkName": "Ace",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Gin 2 shots ",
@@ -68,69 +68,69 @@
       "4. Milk 1/2 shot",
       "5. Egg White 1/2 Fresh"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg"
   },
   {
-    "drinkName": "\"Adam\"",
+    "drinkName": "Adam",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Dark rum 2 oz ",
       "2. Lemon juice 1 oz ",
       "3. Grenadine 1 tsp "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg"
   },
   {
-    "drinkName": "\"B-53\"",
+    "drinkName": "B-53",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Kahlua 1/3 shot ",
       "2. Sambuca 1/3 shot ",
       "3. Grand Marnier 1/3 shot "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg"
   },
   {
-    "drinkName": "\"AT&T\"",
+    "drinkName": "AT&T",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Absolut Vodka 1 oz ",
       "2. Gin 1 oz ",
       "3. Tonic water 4 oz "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg"
   },
   {
-    "drinkName": "\"ACID\"",
+    "drinkName": "ACID",
     "drinkIngredients": [
       "Ingredients: ",
       "1. 151 proof rum 1 oz Bacardi ",
       "2. Wild Turkey 1 oz "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg"
   },
   {
-    "drinkName": "\"B-52\"",
+    "drinkName": "B-52",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Baileys irish cream 1/3 ",
       "2. Grand Marnier 1/3 ",
       "3. Kahlua 1/4 "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg"
   },
   {
-    "drinkName": "\"H.D.\"",
+    "drinkName": "H.D.",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Whisky 4 cl ",
       "2. Baileys irish cream 8 cl ",
       "3. Coffee"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/upusyu1472667977.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/upusyu1472667977.jpg"
   },
   {
-    "drinkName": "\"Smut\"",
+    "drinkName": "Smut",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Red wine 1/3 part ",
@@ -138,10 +138,10 @@
       "3. Pepsi Cola 1/3 part ",
       "4. Orange juice 1/3 part "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/rx8k8e1504365812.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/rx8k8e1504365812.jpg"
   },
   {
-    "drinkName": "\"Rose\"",
+    "drinkName": "Rose",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Dry Vermouth 1/2 oz ",
@@ -151,68 +151,68 @@
       "5. Grenadine 1 tsp ",
       "6. Powdered sugar"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/8kxbvq1504371462.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/8kxbvq1504371462.jpg"
   },
   {
-    "drinkName": "\"A. J.\"",
+    "drinkName": "A. J.",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Applejack 1 1/2 oz ",
       "2. Grapefruit juice 1 oz "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg"
   },
   {
-    "drinkName": "\"Derby\"",
+    "drinkName": "Derby",
     "drinkIngredients": [
       "Ingredients: ",
       "1. gin 6 cl",
       "2. Peach Bitters 2 dashes",
       "3. Mint 2 Fresh leaves"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/52weey1606772672.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/52weey1606772672.jpg"
   },
   {
-    "drinkName": "\"Karsk\"",
+    "drinkName": "Karsk",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Coffee 1 part ",
       "2. Grain alcohol 2 parts "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/808mxk1487602471.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/808mxk1487602471.jpg"
   },
   {
-    "drinkName": "\"Melya\"",
+    "drinkName": "Melya",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Espresso",
       "2. Honey Unsweetened ",
       "3. Cocoa powder"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/xwtptq1441247579.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/xwtptq1441247579.jpg"
   },
   {
-    "drinkName": "\"50/50\"",
+    "drinkName": "50/50",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Vanilla vodka 2 1/2 oz ",
       "2. Grand Marnier 1 splash ",
       "3. Orange juice Fill with "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/wwpyvr1461919316.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/wwpyvr1461919316.jpg"
   },
   {
-    "drinkName": "\"Zorro\"",
+    "drinkName": "Zorro",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Sambuca 2 cl ",
       "2. Baileys irish cream 2 cl ",
       "3. White Creme de Menthe 2 cl "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/kvvd4z1485621283.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/kvvd4z1485621283.jpg"
   },
   {
-    "drinkName": "\"Bijou\"",
+    "drinkName": "Bijou",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Orange Bitters 1 dash",
@@ -220,10 +220,10 @@
       "3. Gin 1 oz",
       "4. Sweet Vermouth 1 oz"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg"
   },
   {
-    "drinkName": "\"Affair\"",
+    "drinkName": "Affair",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Strawberry schnapps 2 oz ",
@@ -231,10 +231,10 @@
       "3. Cranberry juice 2 oz ",
       "4. Club soda"
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/h5za6y1582477994.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/h5za6y1582477994.jpg"
   },
   {
-    "drinkName": "\"Boxcar\"",
+    "drinkName": "Boxcar",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Gin 1 1/2 oz ",
@@ -243,10 +243,10 @@
       "4. Grenadine 1/2 tsp ",
       "5. Egg white 1 "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/pwgtpa1504366376.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/pwgtpa1504366376.jpg"
   },
   {
-    "drinkName": "\"Orgasm\"",
+    "drinkName": "Orgasm",
     "drinkIngredients": [
       "Ingredients: ",
       "1. Creme de Cacao 1/2 oz white ",
@@ -255,6 +255,6 @@
       "4. Vodka 1/2 oz ",
       "5. Light cream 1 oz "
     ],
-    "drinkThumb": "\"https://www.thecocktaildb.com/images/media/drink/vr6kle1504886114.jpg\""
+    "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/vr6kle1504886114.jpg"
   }
 ]

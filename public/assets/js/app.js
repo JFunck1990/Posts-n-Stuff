@@ -105,6 +105,61 @@ $('#login-modal').on('click', function (event) {
   $('#user-info').modal('show');
 });
 
+$('#post-modal').on('click', function (event) {
+  event.preventDefault();
+  $('#post-info').modal('show');
+});
+
+
+// Increase likes or dislikes of post based on which button is clicked
+$('.increaseVal').on('click', function (event) {
+  event.preventDefault();
+  const id = this.getAttribute('data-like');
+
+  if (this.getAttribute('data-like') !== null) {
+    console.log('!LIKES!');
+    let thisLikes = this.parentElement.value;
+    thisLikes ++;
+    console.log(JSON.parse(thisLikes));
+
+    fetch(`/Posts/likes/${id}`, {
+      method: 'PUT',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+
+      
+      body: JSON.stringify(thisLikes),
+    }).then((response) => {
+      if (!response.ok) {
+        alert('something went wrong!');
+      } 
+    });
+  }else if (this.getAttribute('data-dislike') !== null) {
+    console.log('!DISLIKES!');
+    let thisDislikes = this.parentElement.value;
+    thisDislikes ++;
+    console.log(thisDislikes);
+
+    fetch(`/Posts/dislikes/${id}`, {
+      method: 'PUT',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+
+      
+      body: JSON.stringify(thisDislikes),
+    }).then((response) => {
+      if (!response.ok) {
+        alert('something went wrong!');
+      } 
+    });
+  }
+
+});
+
 $('#go-home').on('click', function (event) {
   event.preventDefault();
   window.location.href = '/';
@@ -128,6 +183,10 @@ $('#login').on('click', function (event) {
     }
   });
 });
+
+$('#newPost').on('click', function (event) {
+  event.preventDefault();
+})
 
 // eslint-disable-next-line no-unused-vars
 function drinks () {
