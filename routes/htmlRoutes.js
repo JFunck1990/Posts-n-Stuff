@@ -70,7 +70,10 @@ module.exports = (db) => {
           category: 'Food',
           post: dbPost,
           userInfo: req.session.passport.user,
-          isloggedin: req.isAuthenticated()
+          isloggedin: req.isAuthenticated(),
+          userFirstname: req.session.passport.user.firstName,
+          userLastname: req.session.passport.user.lastName,
+          userId: req.session.passport.user.id
         };
         res.render('drinks', hbsObject);
       });
@@ -92,11 +95,14 @@ module.exports = (db) => {
           category: 'Drinks',
           post: dbPost,
           userInfo: req.session.passport.user,
-          isloggedin: req.isAuthenticated()
+          isloggedin: req.isAuthenticated(),
+          userFirstname: req.session.passport.user.firstName,
+          userLastname: req.session.passport.user.lastName,
+          userId: req.session.passport.user.id
         };
-        console.log('--------------------------------');
+        // console.log('--------------------------------');
         // console.log(hbsObject.post[0].dataValues.image.split('"')[1]);
-        console.log('--------------------------------');
+        // console.log('--------------------------------');
         res.render('drinks', hbsObject);
       });
     } else {
@@ -117,7 +123,10 @@ module.exports = (db) => {
           category: 'DIY',
           post: dbPost,
           userInfo: req.session.passport.user,
-          isloggedin: req.isAuthenticated()
+          isloggedin: req.isAuthenticated(),
+          userFirstname: req.session.passport.user.firstName,
+          userLastname: req.session.passport.user.lastName,
+          userId: req.session.passport.user.id
         };
         res.render('drinks', hbsObject);
       });

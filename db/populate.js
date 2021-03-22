@@ -45,7 +45,6 @@ db.sequelize.sync().then(() => {
         });
 
         foodBody += recipe.mealInstructions;
-        foodBody += `SOURCE: ${recipe.mealSource}`;
 
         db.Posts.create({
           title: recipe.mealName,

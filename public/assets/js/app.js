@@ -1,3 +1,4 @@
+
 $('#add-user').on('click', function (event) {
   event.preventDefault();
 
@@ -182,31 +183,55 @@ $('#login').on('click', function (event) {
 
 $('#newPost').on('click', function (event) {
   event.preventDefault();
+
+  const todaysDate = new Date();
+
+  const newPost = {
+    title: $('#post-title').val().trim(),
+    author: window.userName,
+    image: $('#image-link').val().trim(),
+    date: todaysDate,
+    category: $('#category-post').val().trim(),
+    body: $('#post-body').val().trim(),
+    UserId: window.userID
+  };
+
+  console.log(newPost);
+
+  fetch('/api/post', {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newPost)
+  }).then((res) => {
+    console.log(res);
+    // Empty the form
+    document.getElementById('post-title').value = '';
+    document.getElementById('image-link').value = '';
+    document.getElementById('post-body').value = '';
+
+    console.log('Created a new post!');
+    location.reload();
+  });
 });
 
-// eslint-disable-next-line no-unused-vars
-function drinks () {
-  $('#drinks').on('click', function (event) {
-    event.preventDefault();
-    window.location.href = '/drinks';
-  });
-}
+$('#drinks').on('click', function (event) {
+  event.preventDefault();
+  window.location.href = '/drinks';
+});
 
-// eslint-disable-next-line no-unused-vars
-function food () {
-  $('#food').on('click', function (event) {
-    event.preventDefault();
-    window.location.href = '/food';
-  });
-}
+$('#food').on('click', function (event) {
+  event.preventDefault();
+  window.location.href = '/food';
+});
 
-// eslint-disable-next-line no-unused-vars
-function diy () {
-  $('#diy').on('click', function (event) {
-    event.preventDefault();
-    window.location.href = '/diy';
-  });
-}
+$('#diy').on('click', function (event) {
+  event.preventDefault();
+  window.location.href = '/diy';
+});
+
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 // eslint-disable-next-line no-unused-vars
 function openNav () {

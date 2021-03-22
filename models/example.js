@@ -11,8 +11,14 @@ module.exports = function (sequelize, DataTypes) {
     category: DataTypes.STRING,
     date: DataTypes.DATE,
     body: DataTypes.STRING(5000),
-    likes: DataTypes.INTEGER,
-    dislikes: DataTypes.INTEGER
+    likes: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0
+    },
+    dislikes: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0
+    }
   });
 
   Posts.associate = function (models) {
