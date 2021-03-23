@@ -26,7 +26,7 @@ This is a aplication that allows you create, like, and dislike posts from drinks
 ## Instructions
 * If you dont already have a profile hit register  and type in your First Name, Last Name, Email , and Password and then hit Submit.
 * Once you have established a profile hit Login
-* You will see Drink's, Food, and DIY on the home screen, Clisk on one of your intrest and you will be navigated to the desired page.
+* You will see Drink's, Food, and DIY on the home screen, Click on one of your intrest and you will be navigated to the desired page.
 * Click post at the top right corner plug in title, Image link, Choose category, then Type in content and hit Post.
 * go to the page of your post category and you post will appear.
 * You also will be able to like and dislike the posts.
@@ -56,17 +56,17 @@ This is a aplication that allows you create, like, and dislike posts from drinks
 # Video of how it works.
 > If you click GIF you will be navigated to YouTube for a full-video.
 
-[![Note Taker](https://media.giphy.com/media/EUhCh1QqkLfBQqvfXc/giphy.gif)](https://youtu.be/f-eAdCKbS6o)
+[![Post N' Stuff](https://media.giphy.com/media/LoNhzcNHF6FRgdMSLd/giphy.gif)](https://youtu.be/zxG12xLLp8c)
 
 
 
 <a name="sc"></a>
 # Screen Shots
 ### Home
-<img src="">
+<img src="public/assets/img/home.png">
 ### Drinks
-<img src="">
+<img src="public/assets/img/drinks.png">
 ### Food
-<img src="">
+<img src="public/assets/img/food.png">
 ### Diy
-<img src="">
+<img src="public/assets/img/diy.png">
