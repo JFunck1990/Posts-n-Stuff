@@ -58,7 +58,6 @@ body {
     3px 3px 3px rgba(0, 0, 0, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.5),
     20px 40px 40px rgba(0, 0, 0, 0.5);
   position: relative;
-  
 }
 #Posts {
   height: 55px;
@@ -106,12 +105,13 @@ span {
 
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
+  align-content: left !important;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -146,10 +146,7 @@ span {
   margin: 15px;
   box-shadow: 2px 2px 5px gray;
 }
-.fa-utensils, .fa-tools { 
-  margin-left: 50px;
-  margin-top: 50px;
-}
+
 p {
   padding: 20px;
   font-size: 50px;
@@ -288,90 +285,33 @@ p {
 }
 
 .transparent {
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   border-width: 0px;
   -webkit-box-shadow: 0px 0px;
   box-shadow: 0px 0px;
-  background-color: rgba(0,0,0,0.0);
-  background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-  background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-  background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
-/* 
-body {
+.increaseValbtn {
+  background-color: #2ab6b0;
   color: white;
-  background-size: cover;
-  height:100%
 }
-
-.jumbotron {
-  background: rgba(0,0,0,0);
-}
-
-.modal {
-  color: black;
-}
-
-.btn {
-  color:white;
-  background:#cadde1;
-  border: 1px solid white;
-}
-
-#user-form, .header-wrap, #create-form, .create-user-wrap {
-  padding: 20px;
-  border-radius: 15px;
-  margin: 20px 0;
-}
-
-#update-err-msg,
-#login-err-msg,
-#create-err-msg {
-  color: red !important;
-}
-
-#go-home {
- width: auto;
- height: 65px;
-}
-
-.container {
-  padding-bottom: 2%;
-  margin-top: 10%;
-  background: rgba(86, 101, 115,.6);
-  height:100%;
-  border-radius: .25rem;
-  margin-bottom: 2%;
-  width: 600px;
-}
-
-[data-useremail="true"] {
-  color: white !important;
-}
-[data-register="true"] {
-  color: white !important;
-}
-
-.lead {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.userId h2, .header-wrap h1 {
-  text-transform: capitalize;
-}
-
-hr {
-  background-color: #fff !important;
-}
-
-.list-group-item {
-  line-height: 2.5;
-}
-
-.card-body {
-  color: #444;
-}  */
