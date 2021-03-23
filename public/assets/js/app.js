@@ -114,41 +114,49 @@ $('#post-modal').on('click', function (event) {
 // Increase likes or dislikes of post based on which button is clicked
 $('.increaseVal').on('click', function (event) {
   event.preventDefault();
-  const id = this.getAttribute('data-like');
 
   if (this.getAttribute('data-like') !== null) {
-    console.log('!LIKES!');
-    let thisLikes = this.parentElement.value;
+    const id = this.getAttribute('data-like');
+    console.log('!LIKED!');
+    let thisLikes = parseInt(this.parentElement.lastChild.innerText);
     thisLikes++;
-    console.log(JSON.parse(thisLikes));
 
-    fetch(`/Posts/likes/${id}`, {
-      method: 'PUT',
+    const likes = {
+      numLikes: thisLikes
+    };
+
+    fetch(`/api/post/likes/${id}`, {
+      method: 'PATCH',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json'
+        'Content-type': 'application/json'
       },
 
-      body: JSON.stringify(thisLikes)
+      body: JSON.stringify(likes)
     }).then((response) => {
+      console.log(response);
       if (!response.ok) {
         alert('something went wrong!');
       }
     });
   } else if (this.getAttribute('data-dislike') !== null) {
-    console.log('!DISLIKES!');
-    let thisDislikes = this.parentElement.value;
+    const id = this.getAttribute('data-dislike');
+    console.log('!DISLIKED!');
+    let thisDislikes = parseInt(this.parentElement.lastChild.innerText);
     thisDislikes++;
-    console.log(thisDislikes);
 
-    fetch(`/Posts/dislikes/${id}`, {
-      method: 'PUT',
+    const dislikes = {
+      numDislikes: thisDislikes
+    };
+
+    fetch(`/api/post/dislikes/${id}`, {
+      method: 'PATCH',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
       },
 
-      body: JSON.stringify(thisDislikes)
+      body: JSON.stringify(dislikes)
     }).then((response) => {
       if (!response.ok) {
         alert('something went wrong!');
