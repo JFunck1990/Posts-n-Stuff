@@ -121,6 +121,8 @@ $('.increaseVal').on('click', function (event) {
     let thisLikes = parseInt(this.parentElement.lastChild.innerText);
     thisLikes++;
 
+    this.parentElement.lastChild.innerText = thisLikes;
+
     const likes = {
       numLikes: thisLikes
     };
@@ -144,6 +146,8 @@ $('.increaseVal').on('click', function (event) {
     console.log('!DISLIKED!');
     let thisDislikes = parseInt(this.parentElement.lastChild.innerText);
     thisDislikes++;
+
+    this.parentElement.lastChild.innerText = thisDislikes;
 
     const dislikes = {
       numDislikes: thisDislikes
