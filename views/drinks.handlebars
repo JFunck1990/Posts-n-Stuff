@@ -1,39 +1,42 @@
 <body>
-    <!-- Title bar -->
-    {{> nav/nav-block}}
-    {{> nav/sidebar-block}}
+  <!-- Title bar -->
+  {{> nav/nav-block}}
+  {{> nav/sidebar-block}}
 
-    <div class="container">
-      <div class="wrapper">
-        <div class="row justify-content-center">
-          {{#each post}}
-          <div class="card" style="width: 19rem">
-            <div class="card-header">
-              <h3>{{this.dataValues.title}}</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="font-size: 12px;">By: {{this.dataValues.author}}</li>
-                <li class="list-group-item" style="font-size: 12px;">{{this.dataValues.date}}</li>
-                {{#if this.dataValues.image}}
-                <li class="list-group-item" style="font-size: 12px;"><img src="{{this.dataValues.image}}" style="width:100%" alt=""></li>
-                {{/if}}
-                {{#each this.dataValues.body}}
-                <li class="list-group-item">{{this}}</li>
-                {{/each}}
-                <li class="list-group-item"> <button data-like="{{this.dataValues.id}}" class="increaseVal btn btn-primary">Likes:</button> {{this.dataValues.likes}}</li>
-                <li class="list-group-item"><button data-dislike="{{this.dataValues.id}}" class="increaseVal btn btn-primary">Disikes:</button>  {{this.dataValues.dislikes}}</li>
-              </ul>
-            </div>
+  <div class="container">
+    <div class="wrapper">
+      <div class="row justify-content-center">
+        {{#each post}}
+        <div class="card" style="width: 19rem">
+          <div class="card-header">
+            <h3>{{this.dataValues.title}}</h3>
           </div>
-          {{/each}}
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="font-size: 12px;">By: {{this.dataValues.author}}</li>
+              <li class="list-group-item" style="font-size: 12px;">{{this.dataValues.date}}</li>
+              {{#if this.dataValues.image}}
+              <li class="list-group-item" style="font-size: 12px;"><img src="{{this.dataValues.image}}"
+                  style="width:100%" alt=""></li>
+              {{/if}}
+              {{#each this.dataValues.body}}
+              <li class="list-group-item">{{this}}</li>
+              {{/each}}
+              <li class="list-group-item"> <button data-like="{{this.dataValues.id}}"
+                  class="increaseValbtn btn">Likes:</button> {{this.dataValues.likes}}</li>
+              <li class="list-group-item"><button data-dislike="{{this.dataValues.id}}"
+                  class="increaseValbtn btn">Disikes:</button> {{this.dataValues.dislikes}}</li>
+            </ul>
+          </div>
         </div>
+        {{/each}}
       </div>
     </div>
+  </div>
 
-    <footer class="navbar bg-dark fixed-bottom">
-      <div class="container d-flex justify-content-center">
-        <span> &#169; Made By Team 7</span>
-      </div>
-    </footer>
+  <footer class="navbar bg-dark fixed-bottom">
+    <div class="container d-flex justify-content-center">
+      <span> &#169; Made By Team 7</span>
+    </div>
+  </footer>
 </body>
