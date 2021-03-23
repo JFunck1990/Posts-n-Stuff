@@ -16,11 +16,16 @@ module.exports = (passport, db) => {
   // Post functions
   router.get('/post/:category', AppController.getPostsByCategory);
   router.get('/post/:title', AppController.getPostByTitle);
+  router.get('/post/likes/:id', (req, res) => {
+    db.Posts.findAll({ where: { id: req.params.id } }).then((dbPost) => {
+      res.json(dbPost);
+    });
+  });
   router.post('/post', AppController.createPost);
   router.delete('/post/:id', AppController.deletePost);
-  router.put('/post/:id', AppController.updatePostContent);
-  router.put('/post/likes/:likes', AppController.updateLikes);
-  router.put('/post/dislikes/:dislikes', AppController.updateDislikes);
+  router.patch('/post/:id', AppController.updatePostContent);
+  router.patch('/post/likes/:id', AppController.updateLikes);
+  router.patch('/post/dislikes/:id', AppController.updateDislikes);
 
   return router;
 };
