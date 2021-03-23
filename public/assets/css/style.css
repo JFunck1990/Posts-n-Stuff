@@ -6,14 +6,16 @@
     20px 40px 40px rgba(0, 0, 0, 0.5);
   z-index: +1;
 }
-/* .card-header {
-  background-color: white;
-} */
 
 .card {
   margin-right: 150px;
   box-shadow: 15px 15px 2px 1px rgb(49, 49, 53);
-  background: linear-gradient(90deg, black 0%, #6e7372 49%, #ced7d7 100%) !important;
+  background: linear-gradient(
+    90deg,
+    black 0%,
+    #6e7372 49%,
+    #ced7d7 100%
+  ) !important;
   width: 25%;
   height: 550px;
   margin: 0px auto;
@@ -21,13 +23,23 @@
 
 .card-body {
   color: whitesmoke;
-  background: linear-gradient(90deg, black 0%, #6e7372 49%, #ced7d7 100%) !important;
+  background: linear-gradient(
+    90deg,
+    black 0%,
+    #6e7372 49%,
+    #ced7d7 100%
+  ) !important;
 }
 .list-group-item {
-  background: linear-gradient(90deg, rgb(10, 10, 10) 0%, #6e7372 49%, #c5caca 100%) !important;
+  background: linear-gradient(
+    90deg,
+    rgb(10, 10, 10) 0%,
+    #6e7372 49%,
+    #c5caca 100%
+  ) !important;
 }
 
-.scrollable{ 
+.scrollable {
   font-size: small;
   overflow-y: auto;
   max-height: 250px;
@@ -41,13 +53,11 @@ h3 {
   margin-top: 5px;
 }
 
-
 html,
 body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  /* padding-top: 37px; */
 }
 
 .titlebar {
@@ -58,6 +68,7 @@ body {
     3px 3px 3px rgba(0, 0, 0, 0.25), 10px 10px 20px rgba(0, 0, 0, 0.5),
     20px 40px 40px rgba(0, 0, 0, 0.5);
   position: relative;
+  font-family: "Assistant", sans-serif;
 }
 #Posts {
   height: 55px;
@@ -65,6 +76,7 @@ body {
   margin-left: 20px;
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.596));
   filter: drop-shadow(5px 4px 5px rgba(0, 0, 0, 0.596));
+  font-family: "Cormorant Garamond", serif;
 }
 
 .postingRow {
@@ -95,6 +107,7 @@ span {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  font-family: "Assistant", sans-serif;
 }
 
 #title {
@@ -312,6 +325,11 @@ p {
 }
 
 .increaseValbtn {
+  background-color: #2ab6b0;
+  color: white;
+}
+
+.btn {
   background-color: #2ab6b0;
   color: white;
 }
