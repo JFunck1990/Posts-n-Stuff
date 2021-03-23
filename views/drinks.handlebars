@@ -1,7 +1,7 @@
 <body>
-  <!-- Title bar -->
-  {{> nav/nav-block}}
-  {{> nav/sidebar-block}}
+    <!-- Title bar -->
+    {{> nav/nav-block}}
+    {{> nav/sidebar-block}}
 
     <div class="container">
       <div class="wrapper">
@@ -23,20 +23,21 @@
                 <li class="list-group-item">{{this}}</li>
                 {{/each}}
                 </div>
-                <li class="list-group-item"> <button data-like="{{this.dataValues.id}}" class="increaseVal btn">Likes:</button> <div style="display: inline;">{{this.dataValues.likes}}</div></li>
-                <li class="list-group-item"><button data-dislike="{{this.dataValues.id}}" class="increaseVal btn">Disikes:</button> <div style="display: inline;"> {{this.dataValues.dislikes}}</div></li>
+                <li class="list-group-item"> <button data-like="{{this.dataValues.id}}" class="increaseVal btn btn-primary">Likes:</button>
+                <div style="display: inline;">{{this.dataValues.likes}}</div>
+                </li>
+                <li class="list-group-item"><button data-dislike="{{this.dataValues.id}}" class="increaseVal btn btn-primary">Disikes:</button>  <div style="display: inline;"> {{this.dataValues.dislikes}}</div></li>
               </ul>
             </div>
           </div>
+          {{/each}}
         </div>
-        {{/each}}
       </div>
     </div>
-  </div>
 
-  <footer class="navbar bg-dark fixed-bottom">
-    <div class="container d-flex justify-content-center">
-      <span> &#169; Made By Team 7</span>
-    </div>
-  </footer>
+    <footer class="navbar bg-dark fixed-bottom">
+      <div class="container d-flex justify-content-center">
+        <span> &#169; Made By Team 7</span>
+      </div>
+    </footer>
 </body>
