@@ -3,31 +3,38 @@
   {{> nav/nav-block}}
   {{> nav/sidebar-block}}
 
-    <div class="container">
-      <div class="wrapper">
-        <div class="row justify-content-center">
-          {{#each post}}
-          <div class="card" style="width: 20rem">
-            <div class="card-header text-center">
-              <h3>{{this.dataValues.title}}</h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="font-size: 12px;">By: {{this.dataValues.author}}</li>
-                <li class="list-group-item" style="font-size: 12px;">{{this.dataValues.date}}</li>
-                <div class="scrollable">
+  <div class="container">
+    <div class="wrapper">
+      <div class="row justify-content-center">
+        {{#each post}}
+        <div class="card" style="width: 20rem">
+          <div class="card-header text-center">
+            <h3>{{this.dataValues.title}}</h3>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="font-size: 12px;">By: {{this.dataValues.author}}</li>
+              <li class="list-group-item" style="font-size: 12px;">{{this.dataValues.date}}</li>
+              <div class="scrollable">
                 {{#if this.dataValues.image}}
-                <li class="list-group-item" style="font-size: 12px;"><img src="{{this.dataValues.image}}" style="width:100%" alt=""></li>
+                <li class="list-group-item" style="font-size: 12px;"><img src="{{this.dataValues.image}}"
+                    style="width:100%" alt=""></li>
                 {{/if}}
                 {{#each this.dataValues.body}}
                 <li class="list-group-item">{{this}}</li>
                 {{/each}}
-                </div>
-                <li class="list-group-item"> <button data-like="{{this.dataValues.id}}" class="increaseVal btn">Likes:</button> <div style="display: inline;">{{this.dataValues.likes}}</div></li>
-                <li class="list-group-item"><button data-dislike="{{this.dataValues.id}}" class="increaseVal btn">Disikes:</button> <div style="display: inline;"> {{this.dataValues.dislikes}}</div></li>
-              </ul>
-            </div>
+              </div>
+              <li class="list-group-item"> <button data-like="{{this.dataValues.id}}"
+                  class="increaseVal btn">Likes:</button>
+                <div style="display: inline;">{{this.dataValues.likes}}</div>
+              </li>
+              <li class="list-group-item"><button data-dislike="{{this.dataValues.id}}"
+                  class="increaseVal btn">Disikes:</button>
+                <div style="display: inline;"> {{this.dataValues.dislikes}}</div>
+              </li>
+            </ul>
           </div>
+        </div>
         {{/each}}
       </div>
     </div>
