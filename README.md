@@ -14,7 +14,7 @@ by: Erik Brown, Jenny Smith, Alex Strickland, and Jack Funck
 
 <a name="link"></a>
 ## Link
-give it a try: <a href="" target="_blank">Post N' Stuff</a>
+give it a try: <a href="https://postnstuff.herokuapp.com/ target="_blank">Post N' Stuff</a>
 
 <a name="desc"></a>
 ## Description
