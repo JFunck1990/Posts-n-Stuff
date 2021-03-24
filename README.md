@@ -14,7 +14,11 @@ by: Erik Brown, Jenny Smith, Alex Strickland, and Jack Funck
 
 <a name="link"></a>
 ## Link
+<<<<<<< HEAD
 give it a try: <a href="https://postnstuff.herokuapp.com/" target="_blank">Post N' Stuff</a>
+=======
+give it a try: <a href="https://postnstuff.herokuapp.com/ target="_blank">Post N' Stuff</a>
+>>>>>>> 611f400a6e3508372b94c7daa069efb066e87d67
 
 <a name="desc"></a>
 ## Description
@@ -63,10 +67,10 @@ This is a aplication that allows you create, like, and dislike posts from drinks
 <a name="sc"></a>
 # Screen Shots
 ### Home
-<img src="public/assets/img/hom.png">
+<img src="public/assets/img/home.png">
 ### Drinks
-<img src="public/assets/img/drink.png">
+<img src="public/assets/img/drinks.png">
 ### Food
-<img src="public/assets/img/foo.png">
+<img src="public/assets/img/food.png">
 ### Diy
-<img src="public/assets/img/diys.png">
+<img src="public/assets/img/diy.png">
