@@ -119,6 +119,9 @@ $('.increaseVal').on('click', function (event) {
     const id = this.getAttribute('data-like');
     console.log('!LIKED!');
     let thisLikes = parseInt(this.parentElement.lastChild.innerText);
+    if (thisLikes === null) {
+      thisLikes = 0;
+    }
     thisLikes++;
 
     this.parentElement.lastChild.innerText = thisLikes;
