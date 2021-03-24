@@ -119,7 +119,7 @@ $('.increaseVal').on('click', function (event) {
     const id = this.getAttribute('data-like');
     console.log('!LIKED!');
     let thisLikes = parseInt(this.parentElement.lastChild.innerText);
-    if (thisLikes === null) {
+    if (isNaN(thisLikes)) {
       thisLikes = 0;
     }
     thisLikes++;
@@ -148,6 +148,9 @@ $('.increaseVal').on('click', function (event) {
     const id = this.getAttribute('data-dislike');
     console.log('!DISLIKED!');
     let thisDislikes = parseInt(this.parentElement.lastChild.innerText);
+    if (isNaN(thisDislikes)) {
+      thisDislikes = 0;
+    }
     thisDislikes++;
 
     this.parentElement.lastChild.innerText = thisDislikes;
