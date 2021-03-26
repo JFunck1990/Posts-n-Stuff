@@ -67,10 +67,10 @@ This is a aplication that allows you create, like, and dislike posts from drinks
 <a name="sc"></a>
 # Screen Shots
 ### Home
-<img src="public/assets/images/home.png">
+<img src="public/assets/img/home.png">
 ### Drinks
-<img src="public/assets/images/drinks.png">
+<img src="public/assets/img/drinks.png">
 ### Food
-<img src="public/assets/imgages/food.png">
+<img src="public/assets/img/food.png">
 ### Diy
-<img src="public/assets/images/diy.png">
+<img src="public/assets/img/diy.png">
