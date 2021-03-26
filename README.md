@@ -10,7 +10,7 @@ by: Erik Brown, Jenny Smith, Alex Strickland, and Jack Funck
  - [Api's](#api)
  - [Dependencies](#dep)
  - [Video ](#video)
- - [Screen-Shots](#sc)
+
 
 <a name="link"></a>
 ## Link
@@ -47,8 +47,8 @@ This is a aplication that allows you create, like, and dislike posts from drinks
 
 <a name="api"></a>
 ## Apis used:
-<a href="https://www.themealdb.com/api.php" target="_blank">TheMealDB</a>
-<a href="https://www.thecocktaildb.com/api.php" target= "_blank">TheCockailDB</a>
+* <a href="https://www.themealdb.com/api.php">TheMealDB</a>
+* <a href="https://www.thecocktaildb.com/api.php">TheCockailDB</a>
 
 <img src="./images/passTest.png">
 
@@ -59,14 +59,3 @@ This is a aplication that allows you create, like, and dislike posts from drinks
 [![Post N' Stuff](https://media.giphy.com/media/LoNhzcNHF6FRgdMSLd/giphy.gif)](https://youtu.be/zxG12xLLp8c)
 
 
-
-<a name="sc"></a>
-# Screen Shots
-### Home
-<img src="public/assets/img/home.png">
-### Drinks
-<img src="public/assets/img/drinks.png">
-### Food
-<img src="public/assets/img/food.png">
-### Diy
-<img src="public/assets/img/diy.png">
